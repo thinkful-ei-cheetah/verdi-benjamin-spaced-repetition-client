@@ -1,0 +1,40 @@
+.dashboard-page h2 {
+  margin: 0;
+}
+
+.words {
+  margin-top: 40px;
+}
+
+.words li {
+  display:flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.words li:hover {
+  background: var(--grey);
+}
+
+.words li h4 {
+  flex: 3;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.words li .count {
+  flex: 2;
+  text-align: right;
+}
+
+/* .words li .correct {
+  font-weight: bold;
+  color: var(--green);
+}
+
+.words li .incorrect {
+  font-weight: bold;
+  color: var(--red);
+} */

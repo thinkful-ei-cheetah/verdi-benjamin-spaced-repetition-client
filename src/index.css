@@ -26,6 +26,17 @@ h1,h2,h3,h4,h4,h6 {
   --dark-grey: #2d3436;
   --red: #d63031;
   --light-red: #ff7675;
+  --green: #00b894;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 section {
