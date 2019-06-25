@@ -1,22 +1,28 @@
 import React, { Component } from 'react'
 import './DashboardRoute.css'
-import {dashboardData} from '../../data'
 import Button from '../../components/Button/Button'
 import { Link } from 'react-router-dom'
+import LanguageApiService from '../../services/language-api-service'
 
 class DashboardRoute extends Component {
   state = {
     language: {},
-    words: []
+    words: [],
+    error: null
   }
 
-  componentDidMount() {
-    setTimeout(() => {
+  async componentDidMount() {
+    try {
+      const dashboardData = await LanguageApiService.fetchOverview()
       this.setState({
         language: dashboardData.language,
         words: dashboardData.words
       })
-    }, 1000)
+    } catch(err) {
+      this.setState({
+        error: err.message
+      })
+    }
   }
 
   renderWordList = (words) => {
