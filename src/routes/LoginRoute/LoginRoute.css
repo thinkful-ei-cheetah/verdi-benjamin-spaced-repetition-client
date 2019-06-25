@@ -1,13 +1,6 @@
 .login-page {
-  justify-content: center; 
-  /* margin-left: auto;
-  margin-right: auto; */
+  justify-content: center;
   margin: 30px 15px;
-  /* padding: 30px; */
-}
-
-.login-page .col {
-  max-width: 600px;
 }
 
 .login-page .form-group:nth-child(4) {

@@ -2,10 +2,6 @@
   justify-content: center;
 }
 
-.registration-page .col {
-  max-width: 600px;
-}
-
 .registration-page footer {
   display: flex;
   align-items: center;

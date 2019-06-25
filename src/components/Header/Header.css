@@ -40,6 +40,11 @@ nav.col {
   text-align: right;
 }
 
+nav.col span {
+  display: block;
+  margin-right: 8px;
+}
+
 @media (max-width: 400px) {
   nav.col {
     text-align: left;

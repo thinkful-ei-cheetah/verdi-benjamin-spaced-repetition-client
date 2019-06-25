@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import './DashboardRoute.css'
 
 class DashboardRoute extends Component {
   render() {
     return (
-      <section>
-        implement and style me
+      <section className='flex-grid dashboard-page'>
+        <div className='col'>
+          implement and style me
+        </div>        
       </section>
     );
   }
