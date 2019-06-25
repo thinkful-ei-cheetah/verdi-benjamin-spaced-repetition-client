@@ -24,6 +24,8 @@ h1,h2,h3,h4,h4,h6 {
   --grey: #b2bec3;
   --slate: #636e72;
   --dark-grey: #2d3436;
+  --red: #d63031;
+  --light-red: #ff7675;
 }
 
 section {
@@ -39,6 +41,14 @@ label {
   font-size:18px;
   font-weight:300;
   margin-bottom: 5px;
+}
+
+.form-error {
+  border: 1px solid var(--red);
+  padding: 9px;
+  background: var(--light-red);
+  color: white;
+  font-weight: bold;
 }
 
 .form-group {
