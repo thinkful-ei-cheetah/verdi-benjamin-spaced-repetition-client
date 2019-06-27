@@ -1,0 +1,77 @@
+.learn-page h2{
+  margin: 0;
+}
+
+.learn-page .score-overview p{
+  margin: 2px;
+}
+
+.learn-page span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.guess-form-wrapper {
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.guess-form-wrapper input[type='text']{
+  height: 60px;
+  width: 450px;
+  font-size: 40px;
+}
+
+.guess-form-wrapper label{
+  margin-top:7px;
+}
+
+.guess-form-wrapper .next-word{
+  margin-bottom:15px;
+}
+
+.guess-form-wrapper .form-group{
+  margin-top:20px;
+}
+
+@media (max-width: 550px) {
+  .guess-form-wrapper input[type='text']{
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .guess-form-wrapper h2{
+    font-size: 20px;
+  }
+  .guess-form-wrapper input[type='text']{
+    display: block;
+    height: 30px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  button.big {
+    font-size: 15px;
+  }
+
+  .learn-page .score-overview p{
+    margin: 15px 0;
+  }
+
+  .learn-page .score-overview{
+    margin-top: 15px;
+  }
+
+  .learn-page span{
+    font-size: 24px;
+  }
+
+  .guess-form-wrapper {
+    margin-top:25px;
+  }
+}
