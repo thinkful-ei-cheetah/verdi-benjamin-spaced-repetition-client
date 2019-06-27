@@ -38,6 +38,22 @@
   margin-top:20px;
 }
 
+.Display p {
+  margin-bottom: 3px;
+}
+
+.DisplayFeedback p {
+  margin-top: 0;
+}
+
+.guess h2 {
+  text-align: center;
+}
+
+.guess {
+  padding: 20px;
+}
+
 @media (max-width: 550px) {
   .guess-form-wrapper input[type='text']{
     width: 95%;
@@ -73,5 +89,17 @@
 
   .guess-form-wrapper {
     margin-top:25px;
+  }
+
+  .Display p {
+    margin: 20px 0;
+  }
+  
+  .DisplayFeedback p {
+    margin: 20px 0;
+  }
+
+  .guess h2 {
+    font-size: 20px;
   }
 }
