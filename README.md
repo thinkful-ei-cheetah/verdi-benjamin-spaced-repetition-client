@@ -1,47 +1,44 @@
-# Spaced Repetition Capstone
+# Bonjour! Client App
+Bonjour! is a French language learning app that utilizes the space repetition method for learning.  The app is currently a proof of concept and supports 8 seeded words.
 
-## Setup
+This repo is the front-end client, built in React.  You can see the app live at [https://bonjour-app.now.sh](https://bonjour-app.now.sh)
 
-To setup the application
+The app is mobile optimized and scales nicely between 320px and 1200px.
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+## Introduction
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+Learning a new language can be daunting. The spaced repetition method is a proven way to enhance memorization which makes it ideal for learning a new language. To create the space repetition algorithm we used a singly linked list to move words into their proper invervals.
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+## Quick App Demo
 
-## Running project
+![Demo Gif](https://i.imgur.com/TCrpdT6.gif)
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+## Technology
 
-## Running the tests
+#### Front End
 
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
+* React
+  * Create React App
+  * React Router
+* HTML5
+* CSS3 (scratch - no frameworks)
 
-Cypress has the following expectations:
+#### Testing
 
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
+* Cypress
 
-To start the tests run the command:
+#### Production
 
-```bash
-npm run cypress:open
-```
+* Deployed via Zeit
 
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
+## Getting Started
 
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
+Run `npm install` to load dependencies
 
-Tests will assert against your running localhost client application.
+Run `npm run cypress:open` to open the cypress dashboard and then hit `run all` to run all of the integration tests.
 
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
+This is only the front end client, so develop locally you'll need the backend server as well.
 
-```bash
-npm run cypress:run
-```
+To get the backend up and running see [https://github.com/thinkful-ei-cheetah/verdi-benjamin-spaced-repetition-server](https://github.com/thinkful-ei-cheetah/verdi-benjamin-spaced-repetition-server)
 
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
+Deployments are handled through Zeit and can be run via `npm run deploy`
