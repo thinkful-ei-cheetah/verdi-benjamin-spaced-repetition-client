@@ -26,7 +26,6 @@ class LearningRoute extends Component {
         totalScore: res.totalScore
       })
     } catch(err) {
-      console.error(err.message);
       this.setState({error: err.message})
     }
   }
@@ -36,7 +35,6 @@ class LearningRoute extends Component {
     const guess = this.state.guess;
     try {
       const res = await LanguageApiService.submitGuess({guess});
-      console.log(res);
       this.setState({
         prevWord: this.state.nextWord,
         nextWord: res.nextWord,
