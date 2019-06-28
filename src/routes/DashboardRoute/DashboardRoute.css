@@ -29,12 +29,18 @@
   text-align: right;
 }
 
-/* .words li .correct {
-  font-weight: bold;
-  color: var(--green);
-}
+@media (max-width: 400px) {
+  .words li {
+    flex-direction: column;
+    padding-bottom: 15px; 
+    text-align: center;
+  }
+  .words li h4 {
+    flex: 1;
+  }
 
-.words li .incorrect {
-  font-weight: bold;
-  color: var(--red);
-} */
+  .words li .count {
+    flex: 1;
+    text-align: center;
+  }
+}
